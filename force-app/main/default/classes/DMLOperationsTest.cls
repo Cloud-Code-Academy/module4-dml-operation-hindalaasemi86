@@ -3,7 +3,7 @@
  * This test class contains several test methods, each one designed to validate individual methods in the DMLOperations class, ensuring their correct behavior.
  * The Salesforce Assert class is employed extensively in these test methods to assert and validate the expected outcomes.
  *
- * Each test method is created to test a corresponding method in the DMLOperations class which includes operations such as insert, update, upsert, and delete on Salesforce standard objects like Account, Contact, and Opportunity.
+ * Each test method is created to tests a corresponding method in the DMLOperations class which includes operations such as insert, update, upsert, and delete on Salesforce standard objects like Account, Contact, and Opportunity.
  */
 
 @IsTest
@@ -61,7 +61,7 @@ public with sharing class DMLOperationsTest {
         System.assertEquals(testAccount.Id, retrievedContact.AccountId, 'The Account IDs should match');
     }
     
-    @IsTest
+   @IsTest
     static void testUpdateContactLastName() {
         // Create a test Contact first
         Contact testContact = new Contact(LastName = 'Doe');
